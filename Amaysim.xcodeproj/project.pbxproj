@@ -20,6 +20,10 @@
 		AEA3C0221E25C2440026966F /* ASOtherInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA3C0211E25C2440026966F /* ASOtherInfoViewController.swift */; };
 		AEA3C0241E25CA890026966F /* ASHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA3C0231E25CA890026966F /* ASHomeViewController.swift */; };
 		AEA3C0261E25CB640026966F /* ASProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA3C0251E25CB640026966F /* ASProductDetailsViewController.swift */; };
+		AEA3C0281E25EAF00026966F /* ASHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA3C0271E25EAF00026966F /* ASHelper.swift */; };
+		AEA3C0301E25ECFF0026966F /* amaysim-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = AEA3C02E1E25ECFF0026966F /* amaysim-logo.png */; };
+		AEA3C0311E25ECFF0026966F /* collection.json in Resources */ = {isa = PBXBuildFile; fileRef = AEA3C02F1E25ECFF0026966F /* collection.json */; };
+		AEA3C0331E2628940026966F /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEA3C0321E2628930026966F /* ProfileCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		AEA3C0211E25C2440026966F /* ASOtherInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ASOtherInfoViewController.swift; path = ViewControllers/ASOtherInfoViewController.swift; sourceTree = "<group>"; };
 		AEA3C0231E25CA890026966F /* ASHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ASHomeViewController.swift; path = ViewControllers/ASHomeViewController.swift; sourceTree = "<group>"; };
 		AEA3C0251E25CB640026966F /* ASProductDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ASProductDetailsViewController.swift; path = ViewControllers/ASProductDetailsViewController.swift; sourceTree = "<group>"; };
+		AEA3C0271E25EAF00026966F /* ASHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASHelper.swift; sourceTree = "<group>"; };
+		AEA3C02E1E25ECFF0026966F /* amaysim-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "amaysim-logo.png"; path = "Resources/amaysim-logo.png"; sourceTree = "<group>"; };
+		AEA3C02F1E25ECFF0026966F /* collection.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = collection.json; path = Resources/collection.json; sourceTree = "<group>"; };
+		AEA3C0321E2628930026966F /* ProfileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProfileCell.xib; path = Resources/ProfileCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +117,7 @@
 		AEA3BFE81E24D0740026966F /* Amaysim */ = {
 			isa = PBXGroup;
 			children = (
+				AEA3C0291E25EC2F0026966F /* Resources */,
 				AEA3C01C1E25C1930026966F /* ViewControllers */,
 				AEA3C0171E25C0520026966F /* Protocols */,
 				AEA3BFE91E24D0750026966F /* AppDelegate.swift */,
@@ -117,6 +126,7 @@
 				AEA3BFF01E24D0750026966F /* Assets.xcassets */,
 				AEA3BFF21E24D0750026966F /* LaunchScreen.storyboard */,
 				AEA3BFF51E24D0750026966F /* Info.plist */,
+				AEA3C0271E25EAF00026966F /* ASHelper.swift */,
 			);
 			path = Amaysim;
 			sourceTree = "<group>";
@@ -157,6 +167,16 @@
 				AEA3C0251E25CB640026966F /* ASProductDetailsViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AEA3C0291E25EC2F0026966F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AEA3C02E1E25ECFF0026966F /* amaysim-logo.png */,
+				AEA3C02F1E25ECFF0026966F /* collection.json */,
+				AEA3C0321E2628930026966F /* ProfileCell.xib */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +288,10 @@
 			files = (
 				AEA3BFF41E24D0750026966F /* LaunchScreen.storyboard in Resources */,
 				AEA3BFF11E24D0750026966F /* Assets.xcassets in Resources */,
+				AEA3C0301E25ECFF0026966F /* amaysim-logo.png in Resources */,
+				AEA3C0331E2628940026966F /* ProfileCell.xib in Resources */,
 				AEA3BFEF1E24D0750026966F /* Main.storyboard in Resources */,
+				AEA3C0311E25ECFF0026966F /* collection.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +318,7 @@
 			files = (
 				AEA3C0191E25C0630026966F /* ContainerProtocol.swift in Sources */,
 				AEA3C0261E25CB640026966F /* ASProductDetailsViewController.swift in Sources */,
+				AEA3C0281E25EAF00026966F /* ASHelper.swift in Sources */,
 				AEA3C0241E25CA890026966F /* ASHomeViewController.swift in Sources */,
 				AEA3BFEC1E24D0750026966F /* ViewController.swift in Sources */,
 				AEA3C01B1E25C18B0026966F /* ASLoginViewController.swift in Sources */,
@@ -545,6 +569,7 @@
 				AEA3C0101E24D0750026966F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AEA3C0111E24D0750026966F /* Build configuration list for PBXNativeTarget "AmaysimTests" */ = {
 			isa = XCConfigurationList;
@@ -553,6 +578,7 @@
 				AEA3C0131E24D0750026966F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AEA3C0141E24D0750026966F /* Build configuration list for PBXNativeTarget "AmaysimUITests" */ = {
 			isa = XCConfigurationList;
@@ -561,6 +587,7 @@
 				AEA3C0161E24D0750026966F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

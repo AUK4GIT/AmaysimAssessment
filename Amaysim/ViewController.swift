@@ -20,21 +20,16 @@ class ViewController: ContainerVC {
         // Dispose of any resources that can be recreated.
     }
 
-    func presentNinjaView() {
-        self.cycleFromViewController(oldC: nil, toViewController: (self.storyboard?.instantiateViewController(withIdentifier: "MyContactsNinjaVC"))!, onContainer: self.container);
+    func presentHome() {
+        self.cycleFromViewController(oldC: nil, toViewController: (self.storyboard?.instantiateViewController(withIdentifier: "ASHomeViewController"))!, onContainer: self.container);
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let segueName = segue.identifier {
             print(segueName)
-            if segueName == "MenuVC" {
-                //                let menuVC: MenuVC = segue.destinationViewController as! MenuVC
-                //                menuVC.view.tag = 101;
-            } else if segueName == "DummyVC" {
-                let dummyVC = segue.destination
-                dummyVC.view.tag = 101;
-            }
-            else    {
+            if segueName == "Login" {
+                let vc = segue.destination
+                vc.view.tag = 101;
             }
         }
     }
