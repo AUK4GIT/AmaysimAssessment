@@ -14,6 +14,12 @@
 		AEA3BFF41E24D0750026966F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA3BFF21E24D0750026966F /* LaunchScreen.storyboard */; };
 		AEA3BFFF1E24D0750026966F /* AmaysimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA3BFFE1E24D0750026966F /* AmaysimTests.swift */; };
 		AEA3C00A1E24D0750026966F /* AmaysimUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA3C0091E24D0750026966F /* AmaysimUITests.swift */; };
+		AEA3C0191E25C0630026966F /* ContainerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA3C0181E25C0630026966F /* ContainerProtocol.swift */; };
+		AEA3C01B1E25C18B0026966F /* ASLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA3C01A1E25C18B0026966F /* ASLoginViewController.swift */; };
+		AEA3C01E1E25C2160026966F /* ASSubscriptionsInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA3C01D1E25C2160026966F /* ASSubscriptionsInfoViewController.swift */; };
+		AEA3C0221E25C2440026966F /* ASOtherInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA3C0211E25C2440026966F /* ASOtherInfoViewController.swift */; };
+		AEA3C0241E25CA890026966F /* ASHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA3C0231E25CA890026966F /* ASHomeViewController.swift */; };
+		AEA3C0261E25CB640026966F /* ASProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA3C0251E25CB640026966F /* ASProductDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		AEA3C0051E24D0750026966F /* AmaysimUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmaysimUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEA3C0091E24D0750026966F /* AmaysimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmaysimUITests.swift; sourceTree = "<group>"; };
 		AEA3C00B1E24D0750026966F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEA3C0181E25C0630026966F /* ContainerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContainerProtocol.swift; path = Protocols/ContainerProtocol.swift; sourceTree = "<group>"; };
+		AEA3C01A1E25C18B0026966F /* ASLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ASLoginViewController.swift; path = ViewControllers/ASLoginViewController.swift; sourceTree = "<group>"; };
+		AEA3C01D1E25C2160026966F /* ASSubscriptionsInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ASSubscriptionsInfoViewController.swift; path = ViewControllers/ASSubscriptionsInfoViewController.swift; sourceTree = "<group>"; };
+		AEA3C0211E25C2440026966F /* ASOtherInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ASOtherInfoViewController.swift; path = ViewControllers/ASOtherInfoViewController.swift; sourceTree = "<group>"; };
+		AEA3C0231E25CA890026966F /* ASHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ASHomeViewController.swift; path = ViewControllers/ASHomeViewController.swift; sourceTree = "<group>"; };
+		AEA3C0251E25CB640026966F /* ASProductDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ASProductDetailsViewController.swift; path = ViewControllers/ASProductDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +109,8 @@
 		AEA3BFE81E24D0740026966F /* Amaysim */ = {
 			isa = PBXGroup;
 			children = (
+				AEA3C01C1E25C1930026966F /* ViewControllers */,
+				AEA3C0171E25C0520026966F /* Protocols */,
 				AEA3BFE91E24D0750026966F /* AppDelegate.swift */,
 				AEA3BFEB1E24D0750026966F /* ViewController.swift */,
 				AEA3BFED1E24D0750026966F /* Main.storyboard */,
@@ -123,6 +137,26 @@
 				AEA3C00B1E24D0750026966F /* Info.plist */,
 			);
 			path = AmaysimUITests;
+			sourceTree = "<group>";
+		};
+		AEA3C0171E25C0520026966F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AEA3C0181E25C0630026966F /* ContainerProtocol.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		AEA3C01C1E25C1930026966F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AEA3C01A1E25C18B0026966F /* ASLoginViewController.swift */,
+				AEA3C01D1E25C2160026966F /* ASSubscriptionsInfoViewController.swift */,
+				AEA3C0211E25C2440026966F /* ASOtherInfoViewController.swift */,
+				AEA3C0231E25CA890026966F /* ASHomeViewController.swift */,
+				AEA3C0251E25CB640026966F /* ASProductDetailsViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +293,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEA3C0191E25C0630026966F /* ContainerProtocol.swift in Sources */,
+				AEA3C0261E25CB640026966F /* ASProductDetailsViewController.swift in Sources */,
+				AEA3C0241E25CA890026966F /* ASHomeViewController.swift in Sources */,
 				AEA3BFEC1E24D0750026966F /* ViewController.swift in Sources */,
+				AEA3C01B1E25C18B0026966F /* ASLoginViewController.swift in Sources */,
+				AEA3C01E1E25C2160026966F /* ASSubscriptionsInfoViewController.swift in Sources */,
+				AEA3C0221E25C2440026966F /* ASOtherInfoViewController.swift in Sources */,
 				AEA3BFEA1E24D0750026966F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
