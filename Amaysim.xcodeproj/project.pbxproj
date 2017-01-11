@@ -120,13 +120,11 @@
 				AEA3C0291E25EC2F0026966F /* Resources */,
 				AEA3C01C1E25C1930026966F /* ViewControllers */,
 				AEA3C0171E25C0520026966F /* Protocols */,
+				AEA3C0271E25EAF00026966F /* ASHelper.swift */,
 				AEA3BFE91E24D0750026966F /* AppDelegate.swift */,
 				AEA3BFEB1E24D0750026966F /* ViewController.swift */,
-				AEA3BFED1E24D0750026966F /* Main.storyboard */,
 				AEA3BFF01E24D0750026966F /* Assets.xcassets */,
-				AEA3BFF21E24D0750026966F /* LaunchScreen.storyboard */,
 				AEA3BFF51E24D0750026966F /* Info.plist */,
-				AEA3C0271E25EAF00026966F /* ASHelper.swift */,
 			);
 			path = Amaysim;
 			sourceTree = "<group>";
@@ -172,6 +170,8 @@
 		AEA3C0291E25EC2F0026966F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AEA3BFF21E24D0750026966F /* LaunchScreen.storyboard */,
+				AEA3BFED1E24D0750026966F /* Main.storyboard */,
 				AEA3C02E1E25ECFF0026966F /* amaysim-logo.png */,
 				AEA3C02F1E25ECFF0026966F /* collection.json */,
 				AEA3C0321E2628930026966F /* ProfileCell.xib */,

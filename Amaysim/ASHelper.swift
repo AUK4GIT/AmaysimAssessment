@@ -61,5 +61,11 @@ class ASHelper {
             return false;
         }
     }
+    
+    func authenticate(emailId: String, password: String)-> Bool {
+    
+        return true;
+    }
+
 
 }

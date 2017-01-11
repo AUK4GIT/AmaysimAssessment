@@ -26,16 +26,29 @@ class ASLoginViewController: UIViewController {
         let password = self.password.text?.trimmingCharacters(in: NSCharacterSet.whitespaces)
         if userid?.characters.count == 0 || password?.characters.count == 0{
             //Please fill all details
+            self.showError(message: "Please fill all the details")
         } else if ASHelper.sharedInstance.isvalidaEmailId(emailId: userid!){
             self.authenticateUserLogin(_userid: userid!, _password: password!)
         } else {
             //Unknown Error
+            self.showError(message: "Please enter valid EmailId")
         }
     }
     
+    func showError(message: String){
+        let notifPrompt = UIAlertController(title: "Amaysim", message: message, preferredStyle: UIAlertControllerStyle.alert)
+        notifPrompt.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        self.present(notifPrompt, animated: true, completion: nil);
+    }
+    
     func authenticateUserLogin (_userid: String, _password: String ) {
-        let  containerVC = self.parent as? ViewController
-        containerVC?.presentHome()
+        if ASHelper.sharedInstance.authenticate(emailId: _userid, password: _password) {
+            let  containerVC = self.parent as? ViewController
+            containerVC?.presentHome()
+        } else {
+            self.showError(message: "Invalid user credentials. Please try again.")
+        }
+        
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
